@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f2f2f2; /* Warna abu yang disesuaikan */
+    }
+
+    .floating-label {
+      position: relative;
+      margin: 20px;
+    }
+
+    .floating-label label {
+      position: absolute;
+      pointer-events: none;
+      left: 10px;
+      top: 10px;
+      transition: 0.2s ease all;
+    }
+
+    .floating-label label {
+      top: -20px;
+      font-size: 14px;
+      color: #007BFF;
+    }
+
+    .button-container {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .button-container a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="floating-label">
+  <label for="judul">Judul Buku:</label>
+</div>
+
+<div class="floating-label">
+  <label for="penulis">Penulis:</label>
+</div>
+
+<div class="floating-label">
+  <label for="penerbit">Penerbit:</label>
+</div>
+
+<div class="floating-label">
+  <label for="dicetak">Dicetak Pada:</label>
+</div>
+
+<div class="floating-label">
+  <label for="kepada">Kepada:</label>
+</div>
+
+<div class="button-container">
+  <a href="https://abs.co" target="_blank">Beli Buku</a>
+</div>
+
+</body>
+</html>
