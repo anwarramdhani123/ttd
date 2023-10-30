@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #search-box {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-box">
+        <input type="text" id="search-input" placeholder="Masukkan nomor buku">
+        <button onclick="checkBookEdition()">Cari</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checkBookEdition() {
+            var input = document.getElementById("search-input").value;
+            var result = document.getElementById("result");
+
+            switch (input) {
+                case "001":
+                    result.textContent = "Buku Anda Merupakan Edisi Terbatas (Lihat Data Ke 1)";
+                    break;
+                case "002":
+                    result.textContent = "Buku Anda Merupakan Edisi Terbatas (Lihat Data Ke 2)";
+                    break;
+                case "003":
+                    result.textContent = "Buku Anda Merupakan Edisi Terbatas (Lihat Data Ke 3)";
+                    break;
+                case "004":
+                    result.textContent = "Buku Anda Merupakan Edisi Terbatas (Lihat Data Ke 4)";
+                    break;
+                default:
+                    result.textContent = "Buku Anda bukan edisi terbatas";
+            }
+        }
+    </script>
+</body>
+</html>
